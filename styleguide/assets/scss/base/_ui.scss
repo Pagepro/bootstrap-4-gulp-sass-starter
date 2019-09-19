@@ -1,7 +1,7 @@
 /* ==========================================================================
-   Variables
+   UI
    ========================================================================== */
 
-// fonts
-$font-family-base: 'Montserrat', sans-serif;
-$body-color: #222;
+.ui-weight {
+    @include weight-modifiers;
+}

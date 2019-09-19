@@ -23,7 +23,7 @@ button.pseudo-class-focus {
 }
 
 .table-hover tbody tr.pseudo-class-hover {
-  color: #212529;
+  color: #222;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -285,7 +285,7 @@ select.form-control.pseudo-class-focus::-ms-value {
 }
 
 .btn.pseudo-class-hover {
-  color: #212529;
+  color: #222;
   text-decoration: none;
 }
 
@@ -1809,7 +1809,7 @@ a.badge-grey-shade-4.pseudo-class-focus {
 }
 
 .list-group-item-action.pseudo-class-active {
-  color: #212529;
+  color: #222;
   background-color: #e9ecef;
 }
 

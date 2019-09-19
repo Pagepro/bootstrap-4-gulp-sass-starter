@@ -16,3 +16,13 @@
         -moz-osx-font-smoothing: auto;
     }
 }
+
+/* 3. Modifiers
+========================================================================== */
+@mixin weight-modifiers {
+    @each $name, $val in $font-weights {
+        &-#{$name} {
+            font-weight: $val;
+        }
+    }
+}

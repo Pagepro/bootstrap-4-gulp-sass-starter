@@ -8,17 +8,21 @@ html {
 
 // Typography
 //
-// t-text-1 - 28px
-// t-text-2 - 24px
-// t-text-3 - 21px
-// t-text-4 - 18px
-// t-text-5 - 16px
-// t-text-6 - 12px
+// Styleguide 2
+
+// Text styles
+//
+// .t-text-1 - 28px
+// .t-text-2 - 24px
+// .t-text-3 - 21px
+// .t-text-4 - 18px
+// .t-text-5 - 16px
+// .t-text-6 - 12px
 //
 // markup:
-// <p class="{$modifiers}">Heading: {$modifiers} Good design is good business</p>
+// <p class="{$modifiers}">Good design is good business</p>
 //
-// Styleguide 2
+// Styleguide 2.1
 
 .t-text-1 {
     font-size: 28px;
@@ -44,4 +48,14 @@ html {
     font-size: 12px;
 }
 
-// Styleguide 0.1
+// Font weight
+//
+// .ui-weight-bold - 700
+// .ui-weight-semibold - 600
+// .ui-weight-medium - 500
+//
+// markup:
+// <p class="{$modifiers}">Good design is good business</p>
+//
+// Styleguide 2.2
+

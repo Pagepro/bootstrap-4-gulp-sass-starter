@@ -1,0 +1,21 @@
+// This is as WET as it can get, but unfortunately you can't nest SASS functions so the alternative is to make complex map definitions.
+
+@function get-map-value($map, $keys...) {
+    @each $key in $keys {
+        $isValidKey: map-has-key($map, $key);
+
+        @if ($isValidKey == false) {
+            @warn "There is no element with key: '#{$key}'.";
+
+            @return null;
+        }
+
+        $map: map-get($map, $key);
+    }
+
+    @return $map;
+}
+
+@function font($key) {
+    @return get-map-value($fonts, $key);
+}

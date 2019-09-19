@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+// Colors
+//
+// #F76800 - primary
+// #009C34 - green
+// #C13C27 - red
+// #FFFFFF - white
+// #222222 - black
+// #3D3D3F - grey-dark
+// #9E9B9B - grey-shade-1
+// #C8C8C8 - grey-shade-2
+// #E5E5E5 - grey-shade-3
+// #F5F6F8 - grey-shade-4
+//
+// markup:
+// <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+//
+// Styleguide 1
+
+$theme-colors: (
+    'primary': #f76800,
+    'green': #009c34,
+    'red': #c13c27,
+    'white': #fff,
+    'black': #222,
+    'grey-dark': #3d3d3f,
+    'grey-shade-1': #9e9b9b,
+    'grey-shade-2': #c8c8c8,
+    'grey-shade-3': #e5e5e5,
+    'grey-shade-4': #f5f6f8,
+);

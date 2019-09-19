@@ -22,7 +22,7 @@ var styleguide = require('sc5-styleguide'),
   staticPath = 'static',
   styleSourcePath = sourcePath + '/**/scss',
   scssWild = styleSourcePath + '/**/*.scss',
-  scssRoot = styleSourcePath + '/main.scss',
+  scssRoot = styleSourcePath + '/app.scss',
   extraScssRoot = styleSourcePath + '/styleguide.scss',
   styleguideTmpPath = 'styleguide',
   isProdOrCommit = false;
@@ -106,7 +106,7 @@ gulp.task('styleguide:generate', function () {
     .pipe(styleguide.generate({
       title: 'Shippy Styleguide',
       extraHead: ['<script src="/static/js/app.js"></script>'],
-      disableEncapsulation: true,
+      disableEncapsulation: true,      
       server: !isProdOrCommit,
       rootPath: styleguideTmpPath,
       overviewPath: 'README.md',
@@ -119,7 +119,6 @@ gulp.task('styleguide:generate', function () {
 gulp.task('styleguide:applystyles', function () {
   return gulp
     .src([scssRoot, extraScssRoot])
-    .pipe(concat('all.scss'))
     .pipe(
       sass({
         errLogToConsole: true,
@@ -164,7 +163,7 @@ gulp.task('media', function () {
 
 // Places font files in the dist folder
 gulp.task('font', function () {
-  return gulp.src('src/assets/fonts/**/*.+(eot|woff|ttf|otf)')
+  return gulp.src('src/assets/fonts/*.+(eot|woff|ttf|otf)')
     .pipe(gulp.dest('dist/assets/fonts'))
     .pipe(browserSync.stream())
 })

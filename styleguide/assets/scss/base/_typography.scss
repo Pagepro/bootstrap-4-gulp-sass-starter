@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html {
+    @include font-smoothing(on);
+}
+
+// Typography
+//
+// t-text-1 - 28px
+// t-text-2 - 24px
+// t-text-3 - 21px
+// t-text-4 - 18px
+// t-text-5 - 16px
+// t-text-6 - 12px
+//
+// markup:
+// <p class="{$modifiers}">Heading: {$modifiers} Good design is good business</p>
+//
+// Styleguide 2
+
+.t-text-1 {
+    font-size: 28px;
+}
+
+.t-text-2 {
+    font-size: 24px;
+}
+
+.t-text-3 {
+    font-size: 21px;
+}
+
+.t-text-4 {
+    font-size: 18px;
+}
+
+.t-text-5 {
+    font-size: 16px;
+}
+
+.t-text-6 {
+    font-size: 12px;
+}

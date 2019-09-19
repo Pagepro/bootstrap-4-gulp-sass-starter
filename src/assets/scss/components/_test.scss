@@ -1,0 +1,72 @@
+/* ==========================================================================
+   test
+   ========================================================================== */
+
+// test
+//
+// markup:
+// <div style="max-width: 536px">
+// <div class="c-test c-test--alt">
+//      <h4 class="c-test__heading">
+//          Banker
+//      </h4>
+//      <p class="c-test__company">
+//          Company Name
+//      </p>
+//      <address class="c-test__address">
+//          <p class="t-subtitle-1 t-light">Address line 2</p>
+//          <p class="t-subtitle-1 t-light">Address line 3</p>
+//          <p class="t-subtitle-1 t-light">Address line 4</p>
+//      </address>
+//      <div class="c-test__action">
+//         <a href="#" class="c-underline-link">
+//             Find out more
+//             <span class="c-underline-link__icon o-icon-wrapper">
+//                 <svg class="o-icon o-icon--arrow-right">
+//                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./static/svg/symbol/svg/sprite.symbol.svg#icon-arrow-right"></use>
+//                 </svg>
+//             </span>
+//         </a>
+//      </div>
+// </div>
+// </div>
+//
+// Styleguide 12
+
+.c-test {
+    position: relative;
+
+    width: 100%;
+    padding: (1 * 2) 0 (1 * 2) (1 * 2.2);
+
+    color: color(white);
+    background-color: color(violet-light);
+    background-position: left;
+}
+
+.c-test--alt {
+    background-color: color(violet);
+}
+
+.c-test__heading {
+    margin-bottom: 1 * 1.2;
+
+    font-weight: font-weight(bold);
+}
+
+.c-test__company,
+.c-test__address {
+}
+
+.c-test__address {
+    font-weight: font-weight(regular);
+}
+
+.c-test__address {
+    margin-bottom: 1 * 4.5;
+
+    font-style: normal;
+}
+
+.c-test__action .c-underline-link {
+}

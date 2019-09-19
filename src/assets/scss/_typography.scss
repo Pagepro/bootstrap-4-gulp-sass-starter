@@ -1,0 +1,44 @@
+
+// Typography
+//
+// Styleguide 0
+
+/* 1. Font smoothing
+========================================================================== */
+/* Better font-rendering on OSX
+   https://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+*/
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+/* 2. Headline mixins
+========================================================================== */
+
+// 52 / 56 (500), 76 / 80 / -1.5 (300), 96 / 112 / -1.5 (300)
+
+@mixin headline-1 () {
+    font-size: font-size(size42);
+    font-weight: font-weight(medium);
+    line-height: (line-height(size56) / font-size(size42));
+}
+
+
+// Headline
+//
+// t-headline-1 - m: 52px / 56px medium, t: 76px / 80px light, d: 96px / 112px light
+// t-headline-2 - m: 26px / 30px medium, t: 38px / 48px medium, d: 48px / 56px medium
+// t-headline-3 - m: 22px / 25px medium, t: 34px / 40px medium, d: 34px / 40px medium
+// t-headline-4 - m: 20px / 24px medium, t: 20px / 24px medium, d: 20px / 24px medium
+// t-headline-5 - m: 20px / 24px regular, t: 20px / 24px regular, d: 20px / 24px regular
+//
+// markup:
+// <h2 class="{$modifiers}">Headline: {$modifiers}</h2>
+//
+// Styleguide 0.1

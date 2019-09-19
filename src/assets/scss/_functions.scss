@@ -1,0 +1,14 @@
+// This is as WET as it can get, but unfortunately you can't nest SASS functions so the alternative is to make complex map definitions.
+
+// Fonts
+@function font-weight($key) {
+    @return get-map-value($font-weights, $key);
+}
+
+@function font-size($key) {
+    @return get-map-value($font-sizes, $key);
+}
+
+@function line-height($key) {
+    @return get-map-value($line-heights, $key);
+}

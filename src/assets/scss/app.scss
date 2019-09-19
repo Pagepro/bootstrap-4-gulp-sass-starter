@@ -1,11 +1,15 @@
-//Bootstrap styles 
-@import "node_modules/bootstrap/scss/bootstrap";
+//Custom mixins
+@import "maps";
 
 //Custom mixins
 @import "mixins/mixins";
 
 //Custom settings --
+@import "fonts";
 @import "settings";
 
-//Component specific styles 
+//Component specific styles
 @import "components/callout";
+
+//Bootstrap styles
+@import "node_modules/bootstrap/scss/bootstrap";

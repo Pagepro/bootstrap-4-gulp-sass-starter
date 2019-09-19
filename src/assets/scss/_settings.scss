@@ -16,16 +16,23 @@
  * Primary color settings
  */
 
-$blue-light: #40B4DC;
-$blue-dark: #0c202f;
-$red: #E80029;
-$black: #000;
-$white: #fff;
-$grey-x-light:#f1f1f1;
-$grey-light:#d2d2d2;
-$grey-medium:#8c8c8c;
-$grey-dark:#5a5a5a;
-$grey-form:#C8C8C8;
+// Colors
+//
+// #F76800 - orange (primary);
+// #009C34 - green;
+// #C13C27 - red;
+// #FFFFFF - white
+// #222222 - black;
+// #3D3D3F - grey-dark;
+// #9E9B9B - grey-shade-1;
+// #C8C8C8 - grey-shade-2;
+// #E5E5E5 - grey-shade-3;
+// #F5F6F8 - grey-shade-4;
+//
+// markup:
+// <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+//
+// Styleguide 1
 
 // Grid breakpoints
 //

@@ -9,7 +9,7 @@ $font-weight-base: theme-weight('medium');
 
 // font weights
 $theme-weights: (
-    'medium': 400,
+    'medium': 500,
     'semibold': 600,
     'bold': 700
 );
@@ -21,3 +21,51 @@ $display3-size: 21px;
 $display4-size: 18px;
 $display5-size: 16px;
 $display6-size: 12px;
+
+// form variables
+$input-height: 44px;
+$input-padding-x: 1rem;
+$input-padding-y: 0.5rem;
+$input-font-size: 14px;
+$input-font-weight: 500;
+$input-line-height: 1.79;
+$input-color: #222222;
+$input-bg: #f5f6f8;
+$input-invalid-bg: #F8EBE9;
+$input-border-color: #E5E5E5;
+$input-border-invalid-color: #C13C27;
+$input-border-width: 2px;
+$input-border-radius: 3px;
+$input-placeholder-color: #9e9b9b;
+$input-focus-box-shadow: none;
+$input-focus-border-color: #9E9B9B;
+
+$form-validation-states: ();
+$form-validation-states: map-merge(
+  (
+    "valid": (
+      "color": $input-border-color,
+      "bg-color": $input-bg
+    ),
+    "invalid": (
+      "color": $input-border-invalid-color,
+      "bg-color": $input-invalid-bg
+    )
+  ),
+  $form-validation-states
+);
+
+$form-feedback-margin-top: 0.25rem;
+$form-feedback-font-size: 0.75rem;
+
+$enable-validation-icons: false;
+$label-margin-bottom: 1rem;
+
+// Checkbox variables
+$custom-checkbox-indicator-border-radius: 3px;
+$custom-control-indicator-size: 1.125rem;
+$custom-control-indicator-bg: #fff;
+$custom-control-indicator-border-color: #E5E5E5;
+$custom-control-indicator-checked-border-color: #009C34;
+$custom-control-indicator-checked-bg: #009C34;
+$custom-control-indicator-checked-color: #009C34;

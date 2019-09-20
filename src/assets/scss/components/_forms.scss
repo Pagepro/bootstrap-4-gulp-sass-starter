@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+// Using of colors: https://getbootstrap.com/docs/4.0/utilities/colors/
+
+// Forms
+//
+// Styleguide 3
+
+// Text input
+//
+// default - default state
+// .is-invalid - validation failed state
+//
+// markup:
+// <div class="form-group">
+//     <label for="exampleFormControlInput1">Label</label>
+//     <input type="email" class="form-control {$modifiers}" id="exampleFormControlInput1" placeholder="Placeholder">
+//     <div class="invalid-feedback">
+//         Helper message
+//     </div>
+// </div>
+// <div class="form-group">
+//     <label for="exampleFormControlInput1">Label</label>
+//     <input type="text" class="form-control {$modifiers}" id="exampleFormControlInput1" placeholder="Placeholder" value="Lorem ipsum">
+//     <div class="invalid-feedback">
+//         Helper message
+//     </div>
+// </div>
+// <div class="form-group">
+//     <label for="exampleFormControlInput1">Label</label>
+//     <input type="password" class="form-control {$modifiers}" id="exampleFormControlInput1" placeholder="Placeholder" value="Lorem ipsum">
+//     <div class="invalid-feedback">
+//         Helper message
+//     </div>
+// </div>
+//
+// Styleguide 3.1
+
+.form-group label {
+    font-size: 14px;
+    font-weight: theme-weight('bold');
+    line-height: 18px;
+}
+
+.form-control {
+    &:not(.is-invalid):hover {
+        color: $input-focus-color;
+        border-color: $input-focus-border-color;
+        background-color: $input-focus-bg;
+    }
+    &.is-invalid:focus {
+        box-shadow: none;
+    }
+}
+
+.invalid-feedback {
+    font-weight: theme-weight('semibold');
+}
+
+// Textarea
+//
+// default - default state
+// .is-invalid - validation failed state
+//
+// markup:
+// <div class="form-group">
+//     <label for="exampleFormControlTextarea1">Label</label>
+//     <textarea class="form-control {$modifiers}" id="exampleFormControlTextarea1" rows="3"></textarea>
+// </div>
+// <div class="form-group">
+//     <label for="exampleFormControlTextarea1">Label</label>
+//     <textarea class="form-control {$modifiers}" id="exampleFormControlTextarea1" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis est sed ex porttitor bibendum et a arcu. Aenean a urna magna. Nullam tristique, sem quis malesuada ultricies, nisl sem dapibus.</textarea>
+// </div>
+//
+// Styleguide 3.2
+
+// Select dropdown - add icon here
+//
+// default - default state
+// .is-invalid - validation failed state
+//
+// markup:
+// <div class="form-group">
+//     <label for="inputState">Label</label>
+//     <select id="inputState" class="form-control {$modifiers}">
+//         <option disabled selected hidden>Select</option>
+//         <option>Option</option>
+//         <option>Option</option>
+//     </select>
+//     <div class="invalid-feedback">
+//         Helper message
+//     </div>
+// </div>
+//
+// Styleguide 3.3
+
+select.form-control {
+    padding-right: 2rem;
+
+    background-image: linear-gradient(45deg, transparent 50%, theme-color('grey-shade-1') 50%),
+    linear-gradient(135deg, theme-color('grey-shade-1') 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: calc(100% - (#{$input-padding-x} + 5px)) center,
+    calc(100% - #{$input-padding-x}) center;
+    background-size: 5px 5px,
+    5px 5px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+// Checkboxes
+//
+// default - default state
+// disabled - disabled state
+// checked - checked state
+//
+// markup:
+// <div class="custom-control custom-checkbox">
+//     <input type="checkbox" class="custom-control-input" id="customCheck1" {$modifiers}>
+//     <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+// </div>
+//
+// Styleguide 3.4
+
+.custom-control-label:hover::before {
+    border-color: theme-color('grey-shade-1');
+}
+
+// Radio buttons
+//
+// default - default state
+// disabled - disabled state
+// checked - checked state
+//
+// markup:
+// <div class="custom-control custom-radio">
+//     <input type="radio" id="customRadio1" class="custom-control-input" {$modifiers}>
+//     <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+// </div>
+// <div class="custom-control custom-radio">
+//     <input type="radio" id="customRadio2" class="custom-control-input" {$modifiers}>
+//     <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+// </div>
+//
+// Styleguide 3.5
+
+$custom-radio-indicator-icon-checked-2: str-replace(url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'-4 -4 8 8\'%3e%3ccircle r=\'5\' fill=\'#{$custom-control-indicator-checked-color}\'/%3e%3c/svg%3e'), '#', '%23');
+
+.custom-control-input[type='radio']:checked ~ .custom-control-label {
+    &::before {
+        border-color: $custom-control-indicator-border-color;
+        background-color: theme-color('white');
+    }
+    &::after {
+        background-image: $custom-radio-indicator-icon-checked-2;
+    }
+}

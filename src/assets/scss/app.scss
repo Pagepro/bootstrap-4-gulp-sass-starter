@@ -1,6 +1,6 @@
 /* Setup
    ========================================================================== */
-   
+
 // Custom styles
 @import "base/colors";
 @import "base/variables";
@@ -12,3 +12,8 @@
 
 // Bootstrap styles
 @import "node_modules/bootstrap/scss/bootstrap";
+
+// Components
+@import "components/forms";
+
+

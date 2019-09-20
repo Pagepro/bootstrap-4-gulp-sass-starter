@@ -1,8 +1,0 @@
-@function theme-color($key: 'primary') {
-    @return map-get($theme-colors, $key);
-}
-
-@function theme-weight($key: 'medium') {
-    @return map-get($theme-weights, $key);
-}
-

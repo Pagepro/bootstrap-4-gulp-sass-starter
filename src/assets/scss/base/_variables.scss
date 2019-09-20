@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+// fonts
+$font-family-base: 'Montserrat', sans-serif;
+$body-color: theme-color('black');
+$font-weight-base: theme-weight('medium');
+
+// font weights
+$theme-weights: (
+    'medium': 400,
+    'semibold': 600,
+    'bold': 700
+);
+
+// display headings
+$display1-size: 28px;
+$display2-size: 24px;
+$display3-size: 21px;
+$display4-size: 18px;
+$display5-size: 16px;
+$display6-size: 12px;

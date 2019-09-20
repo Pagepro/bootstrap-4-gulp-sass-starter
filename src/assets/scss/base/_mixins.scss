@@ -19,8 +19,8 @@
 
 /* 3. Modifiers
 ========================================================================== */
-@mixin weight-modifiers {
-    @each $name, $val in $font-weights {
+@mixin font-weight-modifiers {
+    @each $name, $val in $theme-weights {
         &-#{$name} {
             font-weight: $val;
         }

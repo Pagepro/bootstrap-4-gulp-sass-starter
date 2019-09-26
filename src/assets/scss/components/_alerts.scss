@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Alerts
+   ========================================================================== */
+
+// Alerts
+//
+// markup:
+// <div class="alert alert-danger" role="alert">
+//     Opps. Please check and fix fields below
+// </div>
+//
+// Styleguide 3.3
+
+.alert {
+    font-weight: theme-weight('bold');
+
+    border-width: 0 0 0 $alert-border-width;
+    border-color: theme-color('red');
+}

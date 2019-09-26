@@ -64,8 +64,12 @@ $label-margin-bottom: 1rem;
 // Checkbox variables
 $custom-checkbox-indicator-border-radius: 3px;
 $custom-control-indicator-size: 1.125rem;
-$custom-control-indicator-bg: #fff;
+$custom-control-indicator-bg: transparent;
 $custom-control-indicator-border-color: #E5E5E5;
 $custom-control-indicator-checked-border-color: #009C34;
 $custom-control-indicator-checked-bg: #009C34;
-$custom-control-indicator-checked-color: #009C34;
+
+// Alert
+$alert-border-width: 6px;
+$alert-border-radius: 0;
+$alert-color-level: 0;

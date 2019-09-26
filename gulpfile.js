@@ -19,7 +19,7 @@ var gulp = require('gulp'),
 // Styleguide Variables
 var styleguide = require('sc5-styleguide'),
   sourcePath = 'src',
-  staticPath = 'static',
+  staticPath = 'dist',
   styleSourcePath = sourcePath + '/**/scss',
   scssWild = styleSourcePath + '/**/*.scss',
   scssRoot = styleSourcePath + '/app.scss',
@@ -82,8 +82,8 @@ gulp.task('watch', ['sass'], function () {
 
 gulp.task('sgimages', function () {
   gulp
-    .src(staticPath + '/img/**.*')
-    .pipe(gulp.dest(styleguideTmpPath + '/static/img'))
+    .src(staticPath + '/assets/img/**.*')
+    .pipe(gulp.dest(styleguideTmpPath + '/assets/img'))
 })
 
 // TODO - sprites
@@ -106,7 +106,7 @@ gulp.task('styleguide:generate', function () {
     .pipe(styleguide.generate({
       title: 'Shippy Styleguide',
       extraHead: ['<script src="/static/js/app.js"></script>'],
-      disableEncapsulation: true,      
+      disableEncapsulation: true,
       server: !isProdOrCommit,
       rootPath: styleguideTmpPath,
       overviewPath: 'README.md',
